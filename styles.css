@@ -1,10 +1,13 @@
 body {
   background: #f9f7fe;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #885df1;
+  text-decoration: none;
 }
 
 .weather-app {
@@ -40,15 +43,11 @@ header {
   padding: 20px;
   line-height: 1;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 main {
   padding: 30px 0;
-}
-
-.current-temperature {
-  display: flex;
-  align-items: center;
 }
 
 .current-weather {
@@ -61,6 +60,7 @@ main {
   font-weight: 900;
   margin: 0;
 }
+
 .current-details {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
@@ -70,6 +70,11 @@ main {
 
 .current-details strong {
   color: #f65282;
+}
+
+.current-temperature {
+  display: flex;
+  align-items: center;
 }
 
 .current-temperature-icon {
@@ -89,10 +94,60 @@ main {
   top: -24px;
 }
 
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.weather-forecast-day {
+  width: 85px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.weather-forecast-day:hover {
+  background-color: #f0eaff;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #f65282;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature strong {
+  font-weight: 700;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
-
   color: rgba(39, 33, 66, 0.4);
+  font-size: 14px;
+}
+footer a {
+  color: #885df1;
+  font-weight: 500;
 }

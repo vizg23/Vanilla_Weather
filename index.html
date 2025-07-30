@@ -11,39 +11,83 @@
         rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>My weather application</title>
+    <title>My Weather Application</title>
 </head>
 
 <body>
     <div class="weather-app">
         <header>
             <form id="search-form">
-                <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input" />
+                <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input"
+                    aria-label="Enter a city" />
                 <input type="submit" value="Search" class="search-button" />
             </form>
         </header>
         <main>
             <div class="current-weather">
                 <div>
-                    <h1 class="current-city" id="current-city"></h1>
+                    <h1 class="current-city" id="current-city">City</h1>
                     <p class="current-details">
-                        <span id="current-date"></span>, <span id="current-description"></span><br />
-                        Humidity: <strong id="current-humidity"></strong>, Wind: <strong id="current-wind"></strong>
+                        <span id="current-date">Today</span>, <span id="current-description">Clear</span><br />
+                        Humidity: <strong id="current-humidity">60%</strong>, Wind: <strong id="current-wind">15
+                            km/h</strong>
                     </p>
                 </div>
                 <div class="current-temperature">
                     <img src="" alt="Weather Icon" id="current-icon" class="current-temperature-icon" />
-                    <span class="current-temperature-value" id="current-temperature"></span>
+                    <span class="current-temperature-value" id="current-temperature">25</span>
                     <span class="current-temperature-unit">°C</span>
                 </div>
             </div>
+
+            <div class="weather-forecast">
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Tue</div>
+                    <div class="weather-forecast-icon">🌤️</div>
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                        <div class="weather-forecast-temperature">9º</div>
+                    </div>
+                </div>
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Wed</div>
+                    <div class="weather-forecast-icon">🌦️</div>
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature"><strong>17º</strong></div>
+                        <div class="weather-forecast-temperature">10º</div>
+                    </div>
+                </div>
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Thu</div>
+                    <div class="weather-forecast-icon">🌧️</div>
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature"><strong>19º</strong></div>
+                        <div class="weather-forecast-temperature">11º</div>
+                    </div>
+                </div>
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Fri</div>
+                    <div class="weather-forecast-icon">🌤️</div>
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature"><strong>21º</strong></div>
+                        <div class="weather-forecast-temperature">12º</div>
+                    </div>
+                </div>
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Sat</div>
+                    <div class="weather-forecast-icon">☀️</div>
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature"><strong>24º</strong></div>
+                        <div class="weather-forecast-temperature">14º</div>
+                    </div>
+                </div>
+
         </main>
         <footer>
             <p>
                 This project was coded by
                 <a href="https://github.com/vizg23" target="_blank">vizag</a> and is
-                <a href="https://github.com/vizg23/Vanilla_Weather" target="_blank">
-                    on GitHub</a>
+                <a href="https://github.com/vizg23/Vanilla_Weather" target="_blank">on GitHub</a>
                 and
                 <a href="https://weatherapp-priyasri.netlify.app/" target="_blank">hosted on Netlify</a>
             </p>
